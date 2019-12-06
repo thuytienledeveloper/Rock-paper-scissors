@@ -1,0 +1,63 @@
+body {
+    background: black;
+    color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main {
+    margin: 0 auto;
+    padding: 10vh 0;
+    display: flex;
+    justify-content: space-between;
+    background: blue;
+    text-align: center;
+}
+
+.result-class {
+    background: black;
+    line-height: 6vh;
+    margin: 0;
+}
+
+.aside {
+    float: right;
+    background: #fff;
+    min-width: 130px;
+    position: relative;
+    padding: 2vh 5vw;
+    text-align: center;
+    color: #212121;
+}
+
+.scorebox {
+    padding-bottom: 2vh;
+}
+
+.aside button {
+    background-color: blue;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: blue;
+    }
+
+    .main {
+        display: block;
+        background: black;
+    }
+
+    .result-class {
+        background: blue;
+    }
+
+    .aside {
+        width: 100%;
+        padding: 5vh 0;
+    }
+}

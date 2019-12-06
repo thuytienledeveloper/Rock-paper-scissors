@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game Time</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Game On!</h1>
+      </div>
+    </header>
+    <div class="main">
+      <section class="content">
+        <button class="choice" type="button" onclick="play('rock')">
+          <img src="./images/rock.png" />
+          <p>Rock</p>
+        </button>
+        <button class="play paper" type="button" onclick="play('paper')">
+          <img src="./images/paper.png" />
+          <p>Paper</p>
+        </button>
+        <button class="choice" type="button" onclick="play('scissors')">
+          <img src="./images/scissors.png" />
+          <p>Scissors</p>
+        </button>
+        <p class="result-class">
+          <span id="player"></span> <span id="opponent"></span>
+        </p>
+        <h2 id="results"></h2>
+      </section>
+      <aside class="aside">
+        <div class="scorebox">
+          <h2>Score</h2>
+          <div class="score-num"><span id="wins">0</span> <br />wins</div>
+          <div class="score-divider"><span>-</span></div>
+          <div class="score-num"><span id="loses">0</span> <br />loses</div>
+          <div class="score-divider"><span>-</span></div>
+          <div class="score-num"><span id="ties">0</span> <br />ties</div>
+        </div>
+        <button type="reset" id="reset" onclick="reset()">reset scores</button>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
